@@ -16,7 +16,7 @@ namespace API.DTOs
         [RegularExpression(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{4,15}$", ErrorMessage = "Password must have 1 uppercase, 1 lowercase, 1 number, and at least 4 characters")]
         public string Password { get; set; }
         [Required]
-        [StringLength(15, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 5)]
+        [StringLength(15, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 2)]
         public string Username { get; set; }
     }
 }
